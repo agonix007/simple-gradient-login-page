@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(26deg, rgb(14, 11, 144), rgb(216, 22, 246));
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  width: 96vw;
+  height: 92vh;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+}
+.content {
+  width: 50%;
+  font-family: "Nunito";
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddddd;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.image svg {
+  width: 60%;
+  height: 60%;
+}
+.doc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box {
+  padding-left: 80px;
+  width: 360px;
+}
+.box_heading {
+  width: 100%;
+}
+.box h1 {
+  font-family: "Josefin Sans";
+  font-size: 25pt;
+  margin-bottom: 0;
+}
+.box_heading p {
+  font-size: 10pt;
+  color: rgb(119, 119, 119);
+}
+.inputbox {
+  position: relative;
+  width: 336px;
+}
+.inputbox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  outline: none;
+  border: 2px solid #5a068f;
+  border-radius: 20px;
+}
+.inputbox span {
+  position: absolute;
+  top: 0;
+  padding: 12px;
+  pointer-events: none;
+  transition: 0.5s;
+  margin-left: 20px;
+  font-size: 0.8em;
+  color: rgb(119, 119, 119);
+}
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.7em;
+  padding: 0 5px;
+  background-color: #ffffff;
+  letter-spacing: 0.1em;
+  border-right: 1px solid rgb(216, 22, 246);
+  border-left: 1px solid rgb(216, 22, 246);
+}
+.inputbox input:valid,
+.inputbox input:focus {
+  border: 2px solid rgb(254, 36, 138);
+}
+.inp1 {
+  margin-top: 30px;
+}
+.inp2 {
+  margin-top: 28px;
+}
+.check {
+  position: relative;
+  margin-top: 25px;
+}
+.check span {
+  position: absolute;
+  top: 0;
+  padding-left: 5px;
+  padding-top: 3px;
+  font-size: 0.8em;
+}
+.check input {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.check input[type="checkbox"] {
+  accent-color: #1f06a0;
+}
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(14, 11, 144), rgb(216, 22, 246));
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  margin-top: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #c97bf6;
+}
+.sign:hover {
+  transform: scale(1.1);
+}
+.sign a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.social div {
+  border: 2px solid rgb(77, 75, 208);
+  border-radius: 20px;
+  padding: 5px 18px;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgb(145, 66, 242);
+}
+.social div:hover {
+  transform: scale(0.9);
+}
+.social a {
+  text-decoration: none;
+  color: #3e3e3e;
+  font-size: 0.8em;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.s1 {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.s2 {
+  display: flex;
+  align-items: center;
+}
+.s1 img {
+  width: 25px;
+  height: 25px;
+}
+.s2 img {
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 400px) {
+  .content {
+    width: 100%;
+  }
+  .card {
+    display: block;
+    width: 90vw;
+    height: 85vh;
+  }
+  .image {
+    background: none;
+    transform: translateY(-52vh);
+  }
+  .doc {
+    transform: translateY(25vh);
+    align-items: center;
+  }
+  .box {
+    padding: 0px;
+    width: 315px;
+  }
+  .box_heading {
+    text-align: center;
+  }
+  .inputbox {
+    width: 295px;
+  }
+  .inp1 {
+    margin-top: 15px;
+  }
+}
