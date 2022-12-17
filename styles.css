@@ -177,20 +177,23 @@ body {
   height: 25px;
 }
 @media only screen and (max-width: 400px) {
+  .container {
+    height: 750px;
+  }
   .content {
     width: 100%;
   }
   .card {
     display: block;
-    width: 90vw;
-    height: 85vh;
+    width: 23rem;
+    height: 44rem;
   }
   .image {
     background: none;
-    transform: translateY(-52vh);
+    transform: translateY(-25rem);
   }
   .doc {
-    transform: translateY(25vh);
+    transform: translateY(14rem);
     align-items: center;
   }
   .box {
